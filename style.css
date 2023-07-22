@@ -1,0 +1,158 @@
+/* Reset some default styles for better consistency */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.title {
+  text-align: center;
+  color: #00adb5; /* Major color */
+  font-weight: bold;
+  font-size: 28px; /* Increased font size */
+  margin-bottom: 20px;
+}
+
+.balance-container {
+  text-align: center;
+}
+
+#balance {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.inc-exp-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.income,
+.expense {
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #e2fce3, #b9f6c9);
+}
+
+.income {
+  color: #2ecc71;
+}
+
+.expense {
+  color: #e74c3c;
+  background-image: linear-gradient(to right, #fcd7d7, #f9c0c0);
+}
+
+h4 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.money-plus,
+.money-minus {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.transaction-list {
+  list-style: none;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+.transaction-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.transaction-list li span {
+  font-weight: bold;
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+.form-control label {
+  display: block;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-control input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #00adb5; /* Major color */
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #00858d; /* Slightly darker shade for hover */
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 8px; /* Adjusted padding for square shape */
+  opacity: 0;
+  transition: opacity 0.3s ease, background-color 0.2s;
+  border-radius: 10px; /* Square shape */
+}
+
+.delete-btn:hover {
+  background-color: #c0392b; /* Darker shade for hover */
+}
+
+.transaction-list li:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.transaction-list li:hover .delete-btn {
+  opacity: 1;
+}
+
+
+
+
